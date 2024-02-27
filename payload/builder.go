@@ -156,7 +156,7 @@ func (p *Payload) SetAttributesType(attributesType string) *Payload {
 // SetAttributes sets the aps attributes field on the payload.
 // This is used for push-to-start live activities
 //
-//	{"aps":{"attributes-type": attributesType }}`
+//	{"aps":{"attributes": attributes }}`
 func (p *Payload) SetAttributes(attributes map[string]interface{}) *Payload {
 	p.aps().Attributes = attributes
 	return p
